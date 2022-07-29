@@ -10,12 +10,12 @@ import { Container2 } from './Container2'
 
 export const Navbar2 = () => {
   var texts=useSelector((state)=> state.text) 
-  console.log(process.env)
+  
   const [revertido, setRevertido]=useState([])
   const dispatch=useDispatch()
   function submit(e){
     e.preventDefault()
-    axios.get(`${process.env.BACKEND}/iecho?text=${e.target[0].value}`)
+    axios.get(`https://copywrite-backend-llane.herokuapp.com/iecho?text=${e.target[0].value}`)
     .then(res=>{ 
       dispatch(setTexto(res.data.text))
       setRevertido([store.getState()]) 
