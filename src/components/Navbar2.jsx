@@ -10,7 +10,7 @@ import { Container2 } from './Container2'
 
 export const Navbar2 = () => {
   var texts=useSelector((state)=> state.text) 
-  console.log(process.env.BACKEND)
+  console.log(process.env)
   const [revertido, setRevertido]=useState([])
   const dispatch=useDispatch()
   function submit(e){
