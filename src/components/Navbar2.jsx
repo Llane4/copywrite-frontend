@@ -15,7 +15,7 @@ export const Navbar2 = () => {
   const dispatch=useDispatch()
   function submit(e){
     e.preventDefault()
-    axios.get(`https://copywrite-backend-llane.herokuapp.com/iecho?text=${e.target[0].value}`)
+    axios.get(`https://copywrite-backend-llane.herokuapp.com/iecho?text=${e.target[0].value}`, {headers: {"Access-Control-Allow-Origin": "*"} })
     .then(res=>{ 
       dispatch(setTexto(res.data.text))
       setRevertido([store.getState()]) 
