@@ -4,7 +4,7 @@ import "./Container2.css"
 
 
 export const Container2 = ({revertido}) => {
-  console.log(revertido===null)
+ 
   return (
     <Container className='d-flex justify-content-center container1'>
         
