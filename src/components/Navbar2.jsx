@@ -15,17 +15,14 @@ export const Navbar2 = () => {
   function submit(e){
     e.preventDefault()
     console.log(e.target[0].value)
-    axios.get(`http://localhost:3001/iecho?text=${e.target[0].value}`)
+    axios.get(`${process.env.BACKEND}/iecho?text=${e.target[0].value}`)
     .then(res=>{ 
       dispatch(setTexto(res.data.text))
       setRevertido([store.getState()]) 
     
       
     })}
-  function recibirTexto(texto){
-    
-    
-  }  
+ 
   return (
     <>
     <Navbar bg="dark">

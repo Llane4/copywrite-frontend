@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import {Container, Form} from 'react-bootstrap'
 import "./Container2.css"
-import { useSelector } from 'react-redux/es/exports'
+
 
 export const Container2 = ({revertido}) => {
   console.log(revertido===null)

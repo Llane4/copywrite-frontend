@@ -1,6 +1,5 @@
 
 import './App.css';
-import { Container2 } from './components/Container2';
 import { Navbar2 } from './components/Navbar2';
 
 function App() {
